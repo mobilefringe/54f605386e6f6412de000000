@@ -60,46 +60,46 @@
             </p>
             
             <p class="small_field">
-                <label for="fielddhkrtk">Child's First Name</label><br/>
-                <input id="fielddhkrtk" name="cm-f-dhkrtk" type="text" required placeholder="Child's First Name" />
+                <label for="fielddhkjhh">Child's First Name</label><br/>
+                <input id="fielddhkjhh" name="cm-f-dhkjhh" type="text" required placeholder="Child's First Name" />
             </p>
             <p class="small_field">
-                <label for="fielddhkrtu">Child's Last Name</label><br/>
-                <input id="fielddhkrtu" name="cm-f-dhkrtu" type="text" required placeholder="Child's Last Name"/>
+                <label for="fielddhkjhk">Child's Last Name</label><br/>
+                <input id="fielddhkjhk" name="cm-f-dhkjhk" type="text" required placeholder="Child's Last Name"/>
             </p>
           
             <p class="small_field">
-                <label for="fielddhkril">Child's Year of Birth</label><br />
-                <input id="fielddhkril" name="cm-f-dhkril" type="text" required placeholder="Child's Year of Birth"/>
+                <label for="fielddhkjhu">Child's Year of Birth</label><br />
+                <input id="fielddhkjhu" name="cm-f-dhkjhu" type="text" required placeholder="Child's Year of Birth"/>
             </p>
             <p class="small_field">
-                <label for="fielddhkrir">Parent/Gaurdian's First Name</label><br />
-                <input id="fielddhkrir" name="cm-f-dhkrir" type="text" required placeholder="Parent/Gaurdian's First Name"/>
+                <label for="fielddhkjkl">Parent/Gaurdian's First Name</label><br />
+                <input id="fielddhkjkl" name="cm-f-dhkjkl" type="text" required placeholder="Parent/Gaurdian's First Name"/>
             </p>
             <p class="small_field">
-                <label for="fielddhkriy">Parent/Gaurdian's Last Name</label><br />
-                <input id="fielddhkriy" name="cm-f-dhkriy" type="text" required placeholder="Parent/Gaurdian's Last Name"/>
+                <label for="fielddhkjkr">Parent/Gaurdian's Last Name</label><br />
+                <input id="fielddhkjkr" name="cm-f-dhkjkr" type="text" required placeholder="Parent/Gaurdian's Last Name"/>
             </p>
             <p class="small_field">
                 <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
-                <input id="fieldEmail" name="cm-ukiiyu-ukiiyu" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
+                <input id="fieldEmail" name="cm-ukihdd-ukihdd" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
             </p>
             
             <p class="full_field">
-                <label for="fielddhkrij">Street Address</label><br />
-                <input id="fielddhkrij" name="cm-f-dhkrij" type="text" required placeholder="Street Address"/>
+                <label for="fielddhkjky">Street Address</label><br />
+                <input id="fielddhkjky" name="cm-f-dhkjky" type="text" required placeholder="Street Address"/>
             </p>
             <p class="small_field">
-                <label for="fielddhkrid">City</label><br />
-                <input id="fielddhkrid" name="cm-f-dhkrid" type="text" required placeholder= "City"/>
+                <label for="fielddhkjkj">City</label><br />
+                <input id="fielddhkjkj" name="cm-f-dhkjkj" type="text" required placeholder= "City"/>
             </p>
             <p style="small_field">
-                <label for="fielddhkrih">Postal Code</label><br />
-                <input id="fielddhkrih" name="cm-f-dhkrih" type="text" required placeholder="Postal Code" />
+                <label for="fielddhkjkt">Postal Code</label><br />
+                <input id="fielddhkjkt" name="cm-f-dhkjkt" type="text" required placeholder="Postal Code" />
             </p>
              <p style="small_field">
-                <label for="fielddhkrik">Phone Number</label><br />
-                <input id="fielddhkrik" name="cm-f-dhkrik" type="text" required placeholder="Phone Number" />
+                <label for="fielddhkjkd">Phone Number</label><br />
+                <input id="fielddhkjkd" name="cm-f-dhkjkd" type="text" required placeholder="Phone Number" />
             </p>
            
             
