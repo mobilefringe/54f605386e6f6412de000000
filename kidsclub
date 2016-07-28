@@ -93,11 +93,11 @@
                 <label for="fielddhkjkj">City</label><br />
                 <input id="fielddhkjkj" name="cm-f-dhkjkj" type="text" required placeholder= "City"/>
             </p>
-            <p style="small_field">
+            <p class="small_field">
                 <label for="fielddhkjkt">Postal Code</label><br />
                 <input id="fielddhkjkt" name="cm-f-dhkjkt" type="text" required placeholder="Postal Code" />
             </p>
-             <p style="small_field">
+             <p class="small_field">
                 <label for="fielddhkjkd">Phone Number</label><br />
                 <input id="fielddhkjkd" name="cm-f-dhkjkd" type="text" required placeholder="Phone Number" />
             </p>
