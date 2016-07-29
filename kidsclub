@@ -146,7 +146,7 @@ Sign up on-line and you will start receiving a monthly email letting you know wh
             <br>
             <span>
                 <label for="agree_terms" style="display:none">Agree Terms</label>
-              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/sheridan-privacy-policy"><u>Privacy Policy</u></a>. 
+              <input type="checkbox" class="info_check" id="agree_terms" required/>&nbsp;I agree to the <a href = "/pages/milton-privacy-policy"><u>Privacy Policy</u></a>. 
             </span>
             <br />
                 <p>
