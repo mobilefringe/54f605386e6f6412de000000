@@ -194,7 +194,7 @@ label {
     
     
     function verify_required_fields (){
-        if ($("#fielddhkjhh").val() != "" && $("#fielddhkjhk").val() != "" && $("#fielddhkjhu").val() != "" && $("#fielddhkjkl").val() != "" && $("#fielddhkjkr").val() != "" && $("#fieldEmail").val() != "" && $("#fielddhkjky").val() != "" && $("#fielddhkjkj").val() != "" && $("#fielddhkjkt").val() != "" && $("#fielddhkrik").val() != "") {
+        if ($("#fielddhkjhh").val() != "" && $("#fielddhkjhk").val() != "" && $("#fielddhkjhu").val() != "" && $("#fielddhkjkl").val() != "" && $("#fielddhkjkr").val() != "" && $("#fieldEmail").val() != "" && $("#fielddhkjky").val() != "" && $("#fielddhkjkj").val() != "" && $("#fielddhkjkt").val() != "" && $("#fielddhkjkd").val() != "") {
             return true;
         } else {
             return false;
