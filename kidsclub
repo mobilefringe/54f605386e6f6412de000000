@@ -1,5 +1,18 @@
 <style>
-
+    .row{
+        margin-left:-15px;
+        margin-right: -15px;
+    }
+    
+    .col-md-4, .col-md-12{
+        margin-bottom: 20px;
+    }
+    
+    .row input, #enterVerify{
+        width:100%;
+        height:35px;
+        font-size:12px;
+    }
 
     .contest_description{
         margin-bottom:35px;
@@ -14,13 +27,31 @@
         display:inline-block;
         width:49%;
     }
-    .small_field {
-        width:32.5%;
-        display:inline-block;
+    .full_field {
+        padding-bottom: 12px;
     }
     
+label {
+   display: inline-block;
+   margin-bottom: 5px;
+   font-weight: bold;
+   font-size: 13px;
+}
+    
+    .small_field {
+       width: 32.5%;
+   display: inline-block;
+   padding-bottom: 12px;
+    }
+     .full_field input {
+        width: 100%;
+   height: 35px;
+   font-size: 12px;
+    }
     .full_field input, .large_field input, .small_field input {
-        width:98%;
+        width: 95%;
+   height: 35px;
+   font-size: 12px;
     }
     
     @media (max-width: 767px) {
@@ -52,74 +83,83 @@
      <br>
      <div class="contest_form_div">
            <p class="contest_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-         <form action="http://mobilefringe.createsend.com/t/d/s/ukihdd/" method="post" id="contest_form">
+    <form action="http://mobilefringe.createsend.com/t/d/s/ukihdd/" method="post" id="contest_form">
+        <div class="row">
             <p style="display:none">
                 <label for="fieldName">Name</label><br />
                 <input id="fieldName" name="cm-name" type="text"/>
             </p>
             
-            <p class="small_field">
+            <div class="col-md-4">
                 <label for="fielddhkjhh">Child's First Name</label><br/>
                 <input id="fielddhkjhh" name="cm-f-dhkjhh" type="text" required placeholder="Child's First Name" />
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fielddhkjhk">Child's Last Name</label><br/>
                 <input id="fielddhkjhk" name="cm-f-dhkjhk" type="text" required placeholder="Child's Last Name"/>
-            </p>
+            </div>
           
-            <p class="small_field">
-                <label for="fielddhkjhu">Child's Year of Birth</label><br />
+            <div class="col-md-4">
+                <label for="fielddhkjhul">Child's Year of Birth</label><br />
                 <input id="fielddhkjhu" name="cm-f-dhkjhu" type="text" required placeholder="Child's Year of Birth"/>
-            </p>
-            <p class="small_field">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
                 <label for="fielddhkjkl">Parent/Gaurdian's First Name</label><br />
                 <input id="fielddhkjkl" name="cm-f-dhkjkl" type="text" required placeholder="Parent/Gaurdian's First Name"/>
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fielddhkjkr">Parent/Gaurdian's Last Name</label><br />
                 <input id="fielddhkjkr" name="cm-f-dhkjkr" type="text" required placeholder="Parent/Gaurdian's Last Name"/>
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fieldEmail">Parent/Gaurdian's Email Address</label><br />
                 <input id="fieldEmail" name="cm-ukihdd-ukihdd" type="email" required placeholder="Parent/Gaurdian's Email Address"/>
-            </p>
-            
-            <p class="full_field">
+            </div>
+        </div>
+        <div class="row">    
+            <div class="col-md-12">
                 <label for="fielddhkjky">Street Address</label><br />
                 <input id="fielddhkjky" name="cm-f-dhkjky" type="text" required placeholder="Street Address"/>
-            </p>
-            <p class="small_field">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
                 <label for="fielddhkjkj">City</label><br />
                 <input id="fielddhkjkj" name="cm-f-dhkjkj" type="text" required placeholder= "City"/>
-            </p>
-            <p class="small_field">
+            </div>
+            <div class="col-md-4">
                 <label for="fielddhkjkt">Postal Code</label><br />
                 <input id="fielddhkjkt" name="cm-f-dhkjkt" type="text" required placeholder="Postal Code" />
-            </p>
-             <p class="small_field">
+            </div>
+             <div class="col-md-4">
                 <label for="fielddhkjkd">Phone Number</label><br />
                 <input id="fielddhkjkd" name="cm-f-dhkjkd" type="text" required placeholder="Phone Number" />
-            </p>
-           
-            
-       
-            <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
                 <label for="enterVerify">Enter the following number below to proceed: <div id="verifyNum"></div></label><br>
+            </div>
+            <div class="col-md-4">  
                 <input type="hidden" value="701469" id="verifyNumHidden" name="verifyNumHidden" />
                 <input type="text" id="enterVerify" name="enterVerify" />
-            <br>
-
-            <span>
                 <br>
-                <label for="newsletter_signup" style="display:none">Agree Terms</label>
-             
-            <p>
-            <p><a href="#">Privacy Policy</a> & <a href="#">Terms and Conditions</a><br>
-            <br>
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </p>
-        
+            </div>
+            <div class="col-md-12">
+                <span>
+                    <br>
+                    <label for="newsletter_signup" style="display:none">Agree Terms</label>
+                 
+                <p>
+                <p><a href="#">Privacy Policy</a> & <a href="#">Terms and Conditions</a><br>
+                <br>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </p>
+            </div>
+        </div>
+    </form>
      </div>
     </div>
 </div>
@@ -136,60 +176,25 @@
   
     
     $('#contest_form').submit(function (e) {
+        
         if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            if ($("#agree_terms").prop("checked") == true){
-                var e = verify_required_fields();
-                if (e == true){
-                    var name = $("#firstName").val() + " " + $("#lastName").val();
-                    $('input[name="cm-name"]').attr('value',name);
-                    var date = new Date;
-                    contest_id = (get_month(date.getMonth())) + date.getFullYear();
-                    $('input[name="cm-f-jykykj"]').attr('value',contest_id);
-                    if ($("#newsletter_signup").prop("checked") == true){
-                        var s = check_email();
-                        if (s == true){
-                            var email = $("#fieldEmail").val();
-                            $('input[name="cm-ukihdd-ukihdd"]').attr('value',email);
-                            console.log($("#subForm").serialize())
-                             $.getJSON(
-                                "http://mobilefringe.createsend.com/t/d/s/ukihdd/?callback=?",
-                               $("#subForm").serialize(),
-                                function (data) {
-                                    if (data.Status === 400) {
-                                        e.preventDefault();
-                                        alert("Please try again later.");
-                                    } else { // 200
-                                        // $('#contest_form').unbind('submit').submit();
-                                    }
-                            });  
-                        } else {
-                            e.preventDefault();
-                            alert("Invaid E-mail address.")
-                        }
-                        
-                    } else {
-                        $('#contest_form').unbind('submit').submit();    
-                    }    
-                } else {
-                    e.preventDefault();
-                    alert("One or more required fields are blank! please fill in all fields marked with * and try again.")
-                }
-                
-                
-            }
-        }
-            else
-            {
-                alert("Please Enter Correct Verification Number");
-                randomgen();
+            var fields_entered = verify_required_fields();
+            if (!fields_entered){
+                alert("Please enter the required fields.");
                 e.preventDefault();
             }
+        }
+        else{
+            alert("Please Enter Correct Verification Number");
+            randomgen();
+            e.preventDefault();
+        }
         
     });
     
     
     function verify_required_fields (){
-        if ($("#firstName").val() != "" && $("#lastName").val() != "" && $("#fieldEmail").val() != "" && $("#fieldjrihe").val() != "" && $("#fieldjrihs").val() != "" && $("#fieldjrihg").val() != "") {
+        if ($("#fielddhkjhh").val() != "" && $("#fielddhkjhk").val() != "" && $("#fielddhkjhu").val() != "" && $("#fielddhkjkl").val() != "" && $("#fielddhkjkr").val() != "" && $("#fieldEmail").val() != "" && $("#fielddhkjky").val() != "" && $("#fielddhkjkj").val() != "" && $("#fielddhkjkt").val() != "" && $("#fielddhkrik").val() != "") {
             return true;
         } else {
             return false;
@@ -260,10 +265,31 @@
     $(document).ready(function() {
         function renderAll (){
             var propertyDetails = getPropertyDetails();
-            
+            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
             $("#loading_screen").hide();
             $("#main_content").show();
         }
+        
+    
+        function renderPageData(container, template, collection, type){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            Mustache.parse(template_html);   // optional, speeds up future uses
+            if (type == "property_details"){
+                item_list.push(collection);
+                collection = []
+                collection = item_list;
+            }
+            $.each( collection , function( key, val ) {
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+    
+            });
+            
+            $(container).show();
+            $(container).html(item_rendered.join(''));
+        };
 
         loadMallData(renderAll);  
 
