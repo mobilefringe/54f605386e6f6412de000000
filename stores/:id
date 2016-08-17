@@ -532,7 +532,9 @@ background-color: #FFFFFF ;
             ])
         map.setViewBox(id);
         map.selectRegion(id);
-        $('#btnZoomIn').click()
+        $('#btnZoomIn').click();
+        $('#btnZoomIn').click();
+        $('#btnZoomIn').click();
     }
     
 </script>
