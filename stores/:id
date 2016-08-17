@@ -26,6 +26,7 @@ background-color: #FFFFFF ;
 .store_map{
     margin-bottom:30px;
     overflow:hidden;
+    height:inherit;
 }
 .marker {
     background: url("http://kodekloud.s3.amazonaws.com/sites/54cfab316e6f6433ad020000/530d3a9b7bc13ce4a511089c23463f99/10dundas_pin.png") no-repeat;
