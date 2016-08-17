@@ -247,6 +247,7 @@ background-color: #FFFFFF ;
             // renderStoreDetailsTemplate('#store_deatils_map_template','#store_map',store_details);
             
             $("#pop-over").hide();
+            regions = {};
             var stores = getStoresList();
             $.each( stores , function( key, val ) {
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
@@ -257,6 +258,7 @@ background-color: #FFFFFF ;
                     regions[val.svgmap_region] = obj
                 }
             });
+            
             load_map(regions, store_details);
             
             
