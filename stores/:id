@@ -87,14 +87,7 @@ background-color: #FFFFFF ;
     <div class="inside_page_content">
         <div class="left_column">
             <div class="store_map" id="store_map">
-                <div style="overflow:hidden">
-                    <div id="zControls">
-                        <button class="zoom-in"><span class="glyphicon glyphicon-plus"></span></button>
-                        <button class="zoom-out"><span class="glyphicon glyphicon-minus"></span></button>
-                        
-                    </div>
-                    <div id="map" class="panzoom-elements" style=""></div>
-                </div>
+                <div id="mapsvg_store_detail"></div>
             </div>
             <div id="store_desc_container">
                 <script id="store_desc_template" type="x-tmpl-mustache">
