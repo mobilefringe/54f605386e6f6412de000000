@@ -536,8 +536,6 @@ background-color: #FFFFFF ;
         $('#btnZoomIn').click()
         $('#btnZoomIn').click()
         $('#btnZoomIn').click()
-        $('#btnZoomIn').click()
-        $('#btnZoomIn').click()
     }
     
 </script>
