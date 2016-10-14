@@ -237,8 +237,6 @@
                 item_rendered.push(featureitem_rendered);
                 count = count + 1    
                 }
-                
-               
             });
             
            
