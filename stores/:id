@@ -410,7 +410,7 @@ background-color: #FFFFFF ;
                         var close_time = moment(val.close_time).tz(getPropertyTimeZone());
                         val.h = open_time.format("h:mm A") + " - " + close_time.format("h:mm A");
                     } else {
-                        "Closed"
+                        val.h = "Closed"
                     }
                     
                     var rendered = Mustache.render(template_html,val);
