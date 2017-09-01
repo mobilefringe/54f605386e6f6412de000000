@@ -114,9 +114,8 @@
                         val.store_name = store_details.name
                     }
                     if((val.promo_image_url_abs).indexOf('missing.png') > -1){
-                        var store_front = getImageURL(store_details.store_front_url);
-                        val.alt_promo_image_url = store_front;
-                
+                        var store_front_url = getImageURL(store_details.store_front_url);
+                        val.alt_promo_image_url = store_front_url;
                         if(store_front == null) {
                             val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/54f605386e6f6412de000000/e18b7cb654e0d378e2b630d744f86974/milton.png"
                         }
@@ -141,12 +140,9 @@
                         val.store_name = store_details.name
                         
                     }
-                    val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
+                    // val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
                     
                 }
-                // start = new Date (val.start_date + "T05:00:00Z");
-                // end = new Date (val.end_date+ "T05:00:00Z");
-                // val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();
                 
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
