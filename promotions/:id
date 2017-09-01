@@ -68,9 +68,9 @@
             var slug = pathArray[pathArray.length-1];
             promo_details = getPromotionDetailsBySlug(slug);
             console.log(promo_details)
-            renderPageData('#breadcrumb_container','#breadcrumb_template',promo_details, 'promo_details')
-            renderPageData('#banner_container','#banner_template',promo_details, 'promo_details')
-            render_page_details("#promo_container", "#promo_template", promo_details)
+            renderPageData('#breadcrumb_container','#breadcrumb_template', promo_details, 'promo_details');
+            renderPageData('#banner_container','#banner_template', promo_details, 'promo_details');
+            render_page_details("#promo_container", "#promo_template", promo_details);
             
             $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
@@ -79,7 +79,6 @@
             $("#main_content").show();
         }
         
-    
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
@@ -93,9 +92,7 @@
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
@@ -137,9 +134,8 @@
                 } else {
                     if (val.promotionable_type == "Store") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
-                        val.store_detail_btn = store_details.slug 
-                        val.store_name = store_details.name
-                        
+                        val.store_detail_btn = store_details.slug; 
+                        val.store_name = store_details.name;
                     }
                     // val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
                     
@@ -148,11 +144,11 @@
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
                 if (start.format("DMY") == end.format("DMY")){
-                    	val.dates = start.format("MMM D");
-                    }
-                    else{
-                    	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-                    }
+                	val.dates = start.format("MMM D");
+                }
+                else{
+                	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+                }
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
             });
@@ -163,54 +159,6 @@
             }
         }
         
-        function get_month (id){
-            switch(id) {
-                case 0:
-                    month = "Jan"
-                    break;
-                case 1:
-                    month = "Feb"
-                    break;
-                case 2:
-                    month = "Mar"
-                    break;
-                case 3:
-                    month = "Apr"
-                    break;
-                case 4:
-                    month = "May"
-                    break;
-                case 5:
-                    month = "June"
-                    break;
-                case 6:
-                    month = "July"
-                    break;
-                case 7:
-                    month = "Aug"
-                    break;
-                case 8:
-                    month = "Sep"
-                    break;
-                case 9:
-                    month = "Oct"
-                    break;
-                case 10:
-                    month = "Nov"
-                    break;
-                case 11:
-                    month = "Dec"
-                    break;
-                    
-            }
-            return month;
-        }
-        
-
         loadMallData(renderAll);  
-
-    
-  
     });
-    
 </script>
