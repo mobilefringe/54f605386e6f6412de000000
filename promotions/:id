@@ -119,7 +119,6 @@
                     }
                     if (val.promotionable_type == "Property") {
                         var store_details = getStoreDetailsByID(val.promotionable_id);
-                        // val.store_detail_btn = store_details.slug; 
                         val.store_name = "";
                         val.alt_promo_image_url = val.promo_image_url_abs;
                         if((val.promo_image_url_abs).indexOf('missing.png') > -1){
@@ -132,8 +131,7 @@
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
                 if (start.format("DMY") == end.format("DMY")){
                 	val.dates = start.format("MMM D");
-                }
-                else{
+                } else {
                 	val.dates = start.format("MMM D") + " - " + end.format("MMM D");
                 }
                 var rendered = Mustache.render(template_html,val);
