@@ -99,6 +99,13 @@
         setEndPoint('//miltonmall.mallmaverick.com/api/v4/milton/all.json');
     </script>
     <style>
+    .navbar a.navbar-brand img {
+    float: left;
+    margin: 0 6px 0 0;
+    height: auto;
+    width: 140px;
+    padding-left: 10px;
+}
         /*custom styles*/
         a .directory_content:hover{
             color: #938c84 !important;
